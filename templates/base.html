@@ -1,0 +1,894 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SHM-Classes</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/logo2.png' %}" rel="icon">
+  <link href="{% static 'img/logo2.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <h1 class="logo"><a href="index.html">S.H.M.<span>Classes</span></a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="#" class="logo"><img src="{% static 'img/logo1.jpeg' %}" alt=""></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+  </section>
+  <!-- End Hero -->
+  
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><svg  style="width: 3rem; height: 3rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 219.2v212.5c0 14.25 11.62 26.25 26.5 27C75.32 461.2 180.2 471.3 240 511.9V245.2C181.4 205.5 79.99 194.8 29.84 192C13.59 191.1 0 203.6 0 219.2zM482.2 192c-50.09 2.848-151.3 13.47-209.1 53.09C272.1 245.2 272 245.3 272 245.5v266.5c60.04-40.39 164.7-50.76 213.5-53.28C500.4 457.9 512 445.9 512 431.7V219.2C512 203.6 498.4 191.1 482.2 192zM352 96c0-53-43-96-96-96S160 43 160 96s43 96 96 96S352 149 352 96z"/></svg></div>
+              <h4 class="title"><a href="">Effective Courses</a></h4>
+              <p class="description">These courses are designed to develop Mathematical aptitude, Scientific and reasoning skills, Logical thinking and Problem solving skills of the student at early stage and prepare them for future competitive exams.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><svg style="width: 3rem; height: 3rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z"/></svg></div>
+              <h4 class="title"><a href="">Top Faculty</a></h4>
+              <p class="description">As an Educationist, We believe that a student’s education is complete only when we are able to contribute towards his/her overall development besides imparting knowledge based and career oriented training.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><svg style="width: 3rem; height: 3rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 442.5C149.1 446.1 139.2 448 128 448C74.98 448 32 405 32 352V64C14.33 64 0 49.67 0 32C0 14.33 14.33 0 32 0H224C241.7 0 256 14.33 256 32C256 49.67 241.7 64 224 64V309.9L175 389.4C165.2 405.4 160 423.8 160 442.5zM96 160H160V64H96V160zM512 0C529.7 0 544 14.33 544 32C544 49.67 529.7 64 512 64V214.9L629.7 406.2C636.4 417.2 640 429.7 640 442.6C640 480.9 608.9 512 570.6 512H261.4C223.1 512 191.1 480.9 191.1 442.6C191.1 429.7 195.6 417.2 202.3 406.2L319.1 214.9V64C302.3 64 287.1 49.67 287.1 32C287.1 14.33 302.3 0 319.1 0L512 0zM384 64V224C384 229.9 382.4 235.7 379.3 240.8L330.5 320H501.5L452.7 240.8C449.6 235.7 448 229.9 448 224V64H384z"/></svg></div>
+              <h4 class="title"><a href="">Practical Classes</a></h4>
+              <p class="description">To make you an expert by providing in-depth knowledge along with practical exposure.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><svg style="width: 3rem; height: 3rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></svg></div>
+              <h4 class="title"><a href="">Organised Classrooms</a></h4>
+              <p class="description">Our organised classroom provide solutions for JEE, AIPMT, KVPY, Olympiads & Other Entrance Exams</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <h3>Find Out More <span>About Us</span></h3>
+          <p>S.H.M. Classes is the initiative which helps students to get admissions in their dream college.Serving Karnal from more than 6 years.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="{% static 'img/about1.jpeg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>YOUR FUTURE, OUR PRIORITY</h3>
+            <p class="fst-italic">
+              Hard-Work and Consistency are the keys to open every door of success, and S.H.M. Classes follow these principles to help students complete their dream to get get admissions in their dream college.
+            </p>
+            <ul>
+              <li>
+                <!-- <i class="bx bx-store-alt"></i> -->
+                <div>
+                  <h5>Why S.H.M. Classes ?</h5>
+                  <ul>
+                    <li>Maximum 25 students in each Batch, Regular doubts clearing sessions.</li>
+                    <li>Guaranteed Improvement in Performance. Appropriate and regular Performance assessment of each student</li>
+                    <li>Free career counselling session for 10th Class students and Motivational sessions to boost confidence.</li>
+                    <li>Separate Batches for CBSE Board Exams, Free 1 week demo classes to make your decision easier.</li>
+                    <!-- <li></li> -->
+                    <!-- <li>Online/Offline test series & student portal.</li> -->
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <p>
+              Small Batch Size along with Personalised Attention from Top Faculty, alltogether combined to get Magical Results.Practice, determination and efficiency when inculcated in the thorough assistance of expert thoughts are sure to generate the outcome of quality in terms of profession and growth of natural character, and this is the simple purpose of our Institution.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-laughing-fill"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Students Enrolled</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-person-fill"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Teachers</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-pencil-square"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Doubts Solving</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people-fill"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hard Working Team</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'img/clients/client111.png' %}" style="width: 600px; height: 100px;" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'img/clients/client222.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'img/clients/client33.png' %}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <h3>Check our <span>Services</span></h3>
+          <p>Check out the best services offered by our Institution to each student.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-people-fill"></i></div>
+              <h4><a href="">Small Batch Size</a></h4>
+              <p>Maximum 25 number of students in each batch which helps the student to learn better.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-person-square"></i></div>
+              <h4><a href="">Best Course Teachers</a></h4>
+              <p>Concept understanding of student, is our teachers utmost priority rather than craming the concept.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-clock-fill"></i></div>
+              <h4><a href="">Personalised Attention</a></h4>
+              <p>Personalised Attention is given to every student which guarantees Improvement in Performance</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-calendar-event-fill"></i></div>
+              <h4><a href="">Every Month PTM</a></h4>
+              <p>Progess Report card of the student is shared with parents in every PTM.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-book-fill"></i></div>
+              <h4><a href="">Daily DPP's & Discussions</a></h4>
+              <p>Assigments are given on daily basis and discussed.Doubts Solving 24X7.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-building"></i></div>
+              <h4><a href="">Cab/Hostel Facility</a></h4>
+              <p>For out boarders cab and hostel facilities are also available.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonials/testimonials1.jpeg' %}" class="testimonial-img" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h3>ATAL BHATIA</h3>
+                <h4>IIT GUWAHATI</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Hi, My name is Atal Bhatia.I scored 268/360 in JEE-Advance 2019 examination with All India Rank of 512 and also secured AIR 2 in ISI. I prepared for exam at SHM-Classes, Karnal. The teachers here are very helpful.I give whole credit of my success to my parents and teachers.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonials/testimonials2.jpeg' %}" class="testimonial-img" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h3>DIKSHA</h3>
+                <h4>IIT ROPAR</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I am Diksha, a second year undergrad student at IIT Ropar. I got a constant support and guidance during my jee times from Aman sir. I got a rank of 3316 in jee mains and 4621 in jee advanced. Also I secured 99/100 marks in CBSE board exams in class 12th and cleared the PRMO olympiad. Aman sir had always been a friend and not just a teacher to me during the whole jee journey of mine. His amazing teaching skills and even more amazing motivation talks always kept me boosted and confident for the coming things.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonials/testimonials3.jpeg' %}" class="testimonial-img" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h3>RAGHAV MIGLANI</h3>
+                <h4>IIT BHU (Varanasi)</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Hi, My name is Raghav Miglani. I prepared for exam at SHM-Classes, Karnal. The teachers here are very helpful.I give whole credit of my success to my parents and teachers.Aman sir had always been a friend and not just a teacher to me during the whole jee journey of mine. His amazing teaching skills and even more amazing motivation talks always kept me boosted and confident for the coming things.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonials/testimonials4.jpeg' %}" class="testimonial-img" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h3>ARYAN GUPTA</h3>
+                <h4>IIT ROORKEE</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Hi, My name is Aryan Gupta.I prepared for exam at SHM-Classes, Karnal. The teachers here are very helpful.I give whole credit of  my success to my parents and teachers.Aman sir had always been a friend and not just a teacher to me during the whole jee journey of mine. His amazing teaching skills and even more amazing motivation talks always kept me boosted and confident for the coming things.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonials/testimonials5.jpg' %}" class="testimonial-img" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h3>HARSH KUMAR</h3>
+                <h4>IIT ROORKEE</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Hi, My name is Harsh Kumar.I prepared for exam at SHM-Classes, Karnal. The teachers here are very helpful.I give whole credit of  my success to my parents and teachers.Aman sir had always been a friend and not just a teacher to me during the whole jee journey of mine. His amazing teaching skills and even more amazing motivation talks always kept me boosted and confident for the coming things.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonials/testimonials6.jpeg' %}" class="testimonial-img" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h3>DEVANSH KUMAR</h3>
+                <h4>IIT ROORKEE</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Hi, My name is Devansh Kumar.I prepared for exam at SHM-Classes, Karnal. The teachers here are very helpful.I give whole credit of  my success to my parents and teachers.Aman sir had always been a friend and not just a teacher to me during the whole jee journey of mine. His amazing teaching skills and even more amazing motivation talks always kept me boosted and confident for the coming things.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonials/testimonials7.jpg' %}" class="testimonial-img" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h3>AMAN BHATTAN</h3>
+                <h4>IIT ROPAR</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Hi, My name is Aman Bhattan.I prepared for exam at SHM-Classes, Karnal. The teachers here are very helpful.I give whole credit of  my success to my parents and teachers.Aman sir had always been a friend and not just a teacher to me during the whole jee journey of mine. His amazing teaching skills and even more amazing motivation talks always kept me boosted and confident for the coming things.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonials/testimonials8.jpeg' %}" class="testimonial-img" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h3>SAHIL SHARMA</h3>
+                <h4>IIT PALAKKAD</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Hi, My name is Sahil Sharma.I prepared for exam at SHM-Classes, Karnal. The teachers here are very helpful.I give whole credit of  my success to my parents and teachers.Aman sir had always been a friend and not just a teacher to me during the whole jee journey of mine. His amazing teaching skills and even more amazing motivation talks always kept me boosted and confident for the coming things.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <h3>Check our <span>Gallery</span></h3>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/portfolio/portfolio1.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <a href="{% static 'img/portfolio/portfolio1.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M. Classes"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/portfolio/portfolio2.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <!-- <p>Web</p> -->
+              <a href="{% static 'img/portfolio/portfolio2.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M. Classes"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/portfolio/portfolio3.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <!-- <p>App</p> -->
+              <a href="{% static 'img/portfolio/portfolio3.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M.  lasses"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/portfolio/portfolio4.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <!-- <p>Card</p> -->
+              <a href="{% static 'img/portfolio/portfolio4.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M. Classes"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/portfolio/portfolio5.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <!-- <p>Web</p> -->
+              <a href="{% static 'img/portfolio/portfolio5.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M. Classes"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/portfolio/portfolio2.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <!-- <p>App</p> -->
+              <a href="{% static 'img/portfolio/portfolio2.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M. Classes"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/portfolio/portfolio3.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <!-- <p>Card</p> -->
+              <a href="{% static 'img/portfolio/portfolio3.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M. Classes"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/portfolio/portfolio1.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <!-- <p>Card</p> -->
+              <a href="{% static 'img/portfolio/portfolio1.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M. Classes"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/portfolio/portfolio6.jpeg' %}" class="img-fluid" alt="" style="width: 26rem; height: 22rem;">
+            <div class="portfolio-info">
+              <h4>SHM-Classes</h4>
+              <!-- <p>Web</p> -->
+              <a href="{% static 'img/portfolio/portfolio6.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="S.H.M. Classes"><i class="bx bx-plus"></i></a>
+              <a href="/" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <h3>Our Hardworking <span>Team</span></h3>
+          <p>Meet our hardworking and dedicated team.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team/team-11.jpeg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Aman Arora</h4>
+                <span>Ex-FIITJEE Faculty</span>
+                <span>Ex-HOD Mathematics,</span>
+                <span>Genesis Classes Pvt. Ltd.</span>
+                <span>Experience 10 years</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team/team-13.jpeg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Alok Khalan</h4>
+                <span>Ex-Chemsitry Faculty,</span>
+                <span>Genesis Classes Pvt. Ltd.</span>
+                <span>Experience 8 years</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team/team-14.jpeg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Ravi Kant Sanehi</h4>
+                <span>BE (Elec. & Comm.)</span>
+                <span>Royal & Vivid Physics Classes</span>
+                <span>Experience 17 years</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team/team300.png' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dr. Meenu Sharma</h4>
+                <span>M.Sc. (Zoology), PHD, B.Ed,</span>
+                <span>M.Ed., M.Phil,</span>
+                <span>Biology Faculty</span>
+                <span>Experience 18 years</span>
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3>Frequently Asked <span>Questions</span></h3>
+          <p>Below are the Answers of most Frequently asked queries by Students.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">I am student of 10th class and I want to take admission for 11th and 12th, is there anypreparation for NCERT and Board Exams?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Yes, our course material is developed accordingly. Special Board classes and subjective board test are conducted.																		
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Do you provide any sample test papers for preparation ? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Yes, We give regular feedback on performance of the students with tips to improve speed,accuracy & developing examination temperament.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What about the Hostel facilities? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Yes, we provide Hostel facilities as well as Cab facilities.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Do you provide any Demo Class? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Yes, you can have free demo class for 1 week.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question"> Is there any special classes for Board Exams? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Our Course is designed in such a way, that it covers complete Board syllabus along with Competition Exams syllabus.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">How parents will get to know about their children performance and progress? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    We conduct Parent Teachers Meet every month and provide detailed progress report card of the student to parents.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3><span>Contact Us</span></h3>
+          <p>Feel free to fill out the form below and our Experts support team will answer all your Questions.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Main Market,Sector-7, Karnal-132001</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>aman.nitk10@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>(+91) 9034999944</p>
+              <!-- <p></p> -->
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-7 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.1486288058695!2d77.00967011506087!3d29.686470282014028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e7bff45ed8681%3A0x90322612df82356a!2sS.H.M.%20Classes!5e0!3m2!1sen!2sin!4v1657830591973!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <!-- <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          </div>
+          <div class="card col-lg-5 form-group " style="justify-content: center;">
+          <!-- <form action="{% url 'form' %}" method="post"  class="php-email-form">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="number" class="form-control" name="number" id="email" placeholder="Your Contact Number" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><a class="btn btn-primary" type="submit">Send Message</a></div>
+            </form> -->
+        
+            <form action="{% url 'form' %}" class="mx-3" method="post" id="">
+              {% csrf_token %}
+              <h4 class="text-center mb-4 mt-3" style="color: #106eea;">Have a Question? Write to us.</h4>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Your Name" name="name" required>
+                <label for="floatingInput">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Your Contact Number" name="number" required>
+                <label for="floatingPassword">Contact Number</label>
+              </div>
+              <!-- <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingPassword" placeholder="Your Email">
+                <label for="floatingPassword">Email</label>
+              </div> -->
+              <div class="form-floating mb-4">
+                <input class="form-control" placeholder="Message" id="floatingTextarea" name="message" required></input>
+                <label for="floatingTextarea">Message</label>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary mb-3">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <!-- <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>S.H.M.<span>Classes</span></h3>
+            <p>
+              Main-Market <br>
+              Sector-7, Karnal-132001<br>
+              Haryana <br><br>
+              <strong>Phone:</strong> +91-8901193692<br>
+              <strong>Email:</strong> aman.nitk10@gmail.com<br>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Branch<span>Office</span></h3>
+            <p>
+              F-74, Mahal Ext.<br>
+              Jagatpura-302017<br>
+              Jaipur<br><br>
+              <strong>Phone:</strong> +91-8901193692<br>
+              <strong>Email:</strong> aman.nitk10@gmail.com<br>
+            </p>
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Team</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Connect with us on different Social Media platforms.</p>
+            <div class="social-links mt-3">
+              <a href="/" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="/" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Naman</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+        Designed by <a href="https://naman-goyal.up.railway.app/">Naman</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
